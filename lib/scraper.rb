@@ -8,7 +8,7 @@ class Scraper
     html = open(index_url)
     index.css("div.student-card").each do |student|
       student_details = {}
-      
+      student_details[:name] = student.css("h4.student-name").text
   end
 
   def self.scrape_profile_page(profile_url) #Responsible for scraping an individual student's profile page to get further information
