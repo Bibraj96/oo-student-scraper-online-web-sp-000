@@ -18,7 +18,7 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_url) #Responsible for scraping an individual student's profile page to get further information
-
+    student_profile = []
   end
 
 end
