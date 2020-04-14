@@ -28,6 +28,8 @@ class Scraper
         student_profile[:twitter] = social.attribute("href").value
       elsif social.attribute("href").value.include?("linkedin")
         student_profile[:linkedin] = social.attribute("href").value
+      elsif social.attribute("href").value.include?("github")
+        student_profile[:github] = social.attribute("href").value
   end
 
 end
