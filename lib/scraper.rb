@@ -21,8 +21,9 @@ class Scraper
   def self.scrape_profile_page(profile_url) #Responsible for scraping an individual student's profile page to get further information
     student_profile = {}
     html = open(profile_url)
-    index = Nokogiri::HTML(html)
-    index.css
+    profile = Nokogiri::HTML(html)
+    
+    profile.css("div.main-wrapper.profile .social-icon-container a").each do |social|
   end
 
 end
